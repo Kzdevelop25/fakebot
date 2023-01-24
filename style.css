@@ -1,0 +1,130 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
+}
+
+.content {
+  margin: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+#loaders {
+  display: none;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  border-top: 15px solid lightseagreen;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  animation: 1s spin infinite linear;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  background-color: #ddd;
+  color: #222;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 1.5px solid rgb(71, 141, 255);
+  /* outline: none; */
+}
+
+button {
+  background-color: rgb(0, 156, 107);
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: white;
+  transition: .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(2px);
+
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#pertanyaan {
+  font-family: serif;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightseagreen;
+}
+
+.aboutWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+@media  screen and (max-width:768px) {
+
+  
+}
