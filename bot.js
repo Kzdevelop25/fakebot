@@ -12,7 +12,7 @@ const botSay = (data) => {
     `Ohhh ${data?.usia}, hobi kamu apa ya?`,
     `wawww sama dong aku juga hobi ${data?.hobi}, btw sekolah dimana?`,
     `ehh ${data?.sekolah}? wah sama dong aku juga di ${data?.sekolah}. btw ambil jurusan apa?`,
-    `oh ${data?.jurusan}, maksih ya udh mampir, semangat beljarnya yah!`,
+    `ohh kamu jurusan ${data?.jurusan}, maksih ya udh mampir!`,
   ]
 }
 
